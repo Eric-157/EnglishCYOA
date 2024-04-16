@@ -164,3 +164,7 @@ body
 /* Footer */
 
 #footer p { margin: 15px 0; }
+
+#dissapear {
+	display: none;
+}

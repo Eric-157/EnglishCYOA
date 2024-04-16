@@ -39,7 +39,18 @@
           <blockquote>
             <p>Lets have some fun: <a href="Fun.html">Next Page</a></p>
           </blockquote>
-          <blockquote>
+          <script type="text/javascript">
+            function myFunction() {
+              var x = document.getElementById("dissapear");
+              if ((localStorage.getItem(stress) === 'stressBool') and (localStorage.getItem(time) === 'timeBool') and (localStorage.getItem(escape) === 'escapeBool')) {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
+          <button onclick="myFunction()">Click Me</button>
+          <blockquote id="dissapear">
             <p>The true ending: <a href="Secret.html">Last Last Page</a></p>
           </blockquote>
         </div>
